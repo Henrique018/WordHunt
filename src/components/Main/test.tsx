@@ -1,9 +1,10 @@
-import { screen, render } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/test-helper';
 import Main from '.';
 
 describe('<Main>', () => {
   it('should have a hello world message', () => {
-    render(<Main />);
+    renderWithTheme(<Main />);
 
     expect(
       screen.getByRole('heading', { name: /hello world/i })
