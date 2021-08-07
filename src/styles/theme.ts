@@ -14,21 +14,21 @@ export default {
       xlarge: '2.0rem',
       xxlarge: '2.8rem',
       huge: '5.2rem'
-    },
-    colors: {
-      darkBackground: '#E5E5E5',
-      darkPrimary: '#243B53',
-      gray: '#BDBDBD',
-      highlight: '#028FA3'
-    },
-    spacings: {
-      xxsmall: '0.8rem',
-      xsmall: '1.6rem',
-      small: '2.4rem',
-      medium: '3.2rem',
-      large: '4.0rem',
-      xlarge: '4.8rem',
-      xxlarge: '5.6rem'
     }
+  },
+  colors: {
+    darkBackground: '#24292E',
+    darkPrimary: '#243B53',
+    gray: '#BDBDBD',
+    highlight: '#028FA3'
+  },
+  spacings: {
+    xxsmall: '0.8rem',
+    xsmall: '1.6rem',
+    small: '2.4rem',
+    medium: '3.2rem',
+    large: '4.0rem',
+    xlarge: '4.8rem',
+    xxlarge: '5.6rem'
   }
 } as const;

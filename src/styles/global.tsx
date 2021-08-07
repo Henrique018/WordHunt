@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -18,8 +18,11 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 62.5%;
+    ${({ theme }) => css`
+      color: ${theme.colors.gray};
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 62.5%;
+    `}
   }
 
   button {

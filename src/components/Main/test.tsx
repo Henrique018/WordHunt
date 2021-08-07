@@ -3,11 +3,11 @@ import { renderWithTheme } from 'utils/test-helper';
 import Main from '.';
 
 describe('<Main>', () => {
-  it('should have a hello world message', () => {
+  it('should have a heading', () => {
     renderWithTheme(<Main />);
 
     expect(
-      screen.getByRole('heading', { name: /hello world/i })
+      screen.getByRole('heading', { name: /Word hunt/i })
     ).toBeInTheDocument();
   });
 });
