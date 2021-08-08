@@ -1,4 +1,7 @@
+import Link from 'next/link';
+
 import Description from 'components/Description';
+
 import * as S from './styles';
 
 const Main = () => {
@@ -9,7 +12,7 @@ const Main = () => {
         <Description
           heading={'ingenuity'}
           phonetics={'/ˌɪn·dʒəˈnu·ə·t̬i/'}
-          partOfSpeech={'noun '}
+          partOfSpeech={'noun'}
           definitions={{
             meaning: 'The quality of being clever, original, and inventive.',
             synonyms: [
@@ -26,7 +29,10 @@ const Main = () => {
           }}
         />
       </S.DescriptionWrapper>
-      <S.Footer>Developed with Next.JS, by Henrique Oliveira</S.Footer>
+      <S.Footer>
+        Developed with <Link href="https://nextjs.org/">Next.JS</Link>, by
+        <Link href="https://github.com/Henrique018"> Henrique Oliveira</Link>
+      </S.Footer>
     </S.Wrapper>
   );
 };

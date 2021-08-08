@@ -1,6 +1,6 @@
 export default {
   border: {
-    radius: '0.8rem'
+    radius: '0.4rem'
   },
   font: {
     light: 300,
@@ -20,7 +20,8 @@ export default {
     darkBackground: '#24292E',
     darkPrimary: '#243B53',
     gray: '#BDBDBD',
-    highlight: '#028FA3'
+    highlight: '#028FA3',
+    white: '#f2f2f2'
   },
   spacings: {
     xxsmall: '0.8rem',

@@ -65,7 +65,6 @@ export const Separator = styled.hr`
 export const Definitions = styled.div`
   width: 78%;
   margin: 0 auto;
-  height: 20rem;
 `;
 
 export const Text = styled.p`
