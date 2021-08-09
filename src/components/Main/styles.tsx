@@ -26,7 +26,17 @@ export const Footer = styled.p`
   `}
 `;
 
-export const DescriptionWrapper = styled.div`
+export const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+
+  ${media.greaterThan('medium')`
+    flex-direction: row;
+    justify-content: space-around;
+  `}
+`;
+
+export const Content = styled.div`
   width: 100%;
 
   ${media.greaterThan('medium')`
