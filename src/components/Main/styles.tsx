@@ -23,6 +23,16 @@ export const Heading = styled.h1`
 export const Footer = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xsmall};
+
+    a {
+      color: ${theme.colors.gray};
+      text-decoration: none;
+
+      &:hover {
+        color: ${theme.colors.highlight};
+        text-decoration: underline;
+      }
+    }
   `}
 `;
 
