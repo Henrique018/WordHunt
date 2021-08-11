@@ -13,7 +13,7 @@ const TextField = ({ onInputChange }: TextFieldProps) => {
     const newValue = e.target.value;
     setValue(newValue);
 
-    !!onInputChange && onInputChange(value);
+    !!onInputChange && onInputChange(newValue);
   };
 
   return (
