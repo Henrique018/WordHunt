@@ -15,13 +15,13 @@ export default createGlobalStyle`
 
   html, body, #__next {
     height: 100%;
+    font-size: 62.5%;
   }
 
   body {
     ${({ theme }) => css`
       color: ${theme.colors.gray};
       font-family: 'Poppins', Arial, Helvetica, sans-serif;
-      font-size: 62.5%;
     `}
   }
 

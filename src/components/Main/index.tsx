@@ -57,7 +57,9 @@ const Main = () => {
           <TextField onInputChange={(w) => handleWord(w)} />
           <Select onSelect={(l) => handleChange(l)} />
         </S.InputWrapper>
-        {definitions.heading ? <Description {...definitions} /> : null}
+        {definitions.heading ? (
+          <Description {...definitions} language={lang} />
+        ) : null}
       </S.Content>
       <S.Footer>
         Developed with <Link href="https://nextjs.org/">Next.JS</Link>, by

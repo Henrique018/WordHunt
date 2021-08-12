@@ -6,6 +6,7 @@ const mock = {
   heading: 'ingenuity',
   phonetics: '/ˌɪn·dʒəˈnu·ə·t̬i/',
   partOfSpeech: 'noun ',
+  language: 'en-US',
   definitions: {
     meaning: 'The quality of being clever, original, and inventive.',
     synonyms: [

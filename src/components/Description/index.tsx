@@ -10,14 +10,32 @@ type DescriptionProps = {
     synonyms: string[];
     example: string;
   };
+  language: string;
 };
 
 const Description = ({
   heading,
   phonetics,
   partOfSpeech,
-  definitions
+  definitions,
+  language
 }: DescriptionProps) => {
+  const speak = () => {
+    const synth = window.speechSynthesis;
+    const voices = synth.getVoices();
+
+    const selectedVoice = voices.find(
+      (voice) => voice.lang === language.replace('_', '-')
+    );
+
+    console.log(language.replace('_', '-'));
+
+    const utterance = new SpeechSynthesisUtterance(heading);
+    utterance.lang = selectedVoice?.lang ? selectedVoice?.lang : 'en-US';
+    utterance.volume = 0.8;
+    utterance.rate = 0.8;
+    synth.speak(utterance);
+  };
   return (
     <S.Wrapper>
       <S.Header>
@@ -26,7 +44,7 @@ const Description = ({
           <S.PartofSpeech>{partOfSpeech}</S.PartofSpeech>
         </div>
         <S.Pronunciation>
-          <S.SoundButton title="hear the pronunciation">
+          <S.SoundButton title="hear the pronunciation" onClick={speak}>
             <Soundwave size={35} color={'#f2f2f2'} />
           </S.SoundButton>
           {phonetics && (
@@ -40,6 +58,12 @@ const Description = ({
         <S.Text>{definitions.meaning}</S.Text>
 
         <S.Separator />
+        <S.Text>
+          Example: <br />
+          {definitions.example}
+        </S.Text>
+
+        <S.Separator />
         <div>
           <S.Text>
             Synonyms:
@@ -47,12 +71,6 @@ const Description = ({
             {definitions.synonyms.map((synonym) => synonym.concat(', '))}
           </S.Text>
         </div>
-
-        <S.Separator />
-        <S.Text>
-          Example: <br />
-          {definitions.example}
-        </S.Text>
       </S.Definitions>
     </S.Wrapper>
   );

@@ -11,12 +11,14 @@ export const Wrapper = styled.div`
 
 export const Header = styled.div`
   display: flex;
-  justify-content: space-around;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
 `;
 
 export const Heading = styled.h2`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xlarge};
+    font-size: ${theme.font.sizes.xxlarge};
 
     &::before {
       content: '';
@@ -50,7 +52,7 @@ export const SoundButton = styled.button`
 
 export const Phonetics = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.large};
     margin-left: ${theme.spacings.xsmall};
   `}
 `;
@@ -70,6 +72,7 @@ export const Definitions = styled.div`
 export const Text = styled.p`
   ${({ theme }) => css`
     text-align: left;
-    font-size: ${theme.font.sizes.xsmall};
+    line-height: 2.5rem;
+    font-size: ${theme.font.sizes.small};
   `}
 `;

@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 
 export const Heading = styled.h1`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxlarge};
+    font-size: ${theme.font.sizes.huge};
     margin: ${theme.spacings.small} 0;
     font-weight: ${theme.font.regular};
   `}
