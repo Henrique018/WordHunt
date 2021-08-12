@@ -1,14 +1,18 @@
 type ApiData = {
   word: string;
   phonetic: string;
-  meanings: {
-    partOfSpeech: string;
-    definitions: {
-      definition: string;
-      synonyms: string[];
-      example: string;
-    };
-  }[];
+  meanings: [
+    {
+      partOfSpeech: string;
+      definitions: [
+        {
+          definition: string;
+          synonyms: string[];
+          example: string;
+        }
+      ];
+    }
+  ];
 };
 
 export const mapToDescription = (data: ApiData) => {
