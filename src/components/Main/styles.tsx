@@ -39,10 +39,13 @@ export const Footer = styled.p`
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  margin: 0 auto;
+  width: 95%;
 
   ${media.greaterThan('medium')`
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
   `}
 `;
 

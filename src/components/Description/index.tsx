@@ -28,11 +28,9 @@ const Description = ({
       (voice) => voice.lang === language.replace('_', '-')
     );
 
-    console.log(language.replace('_', '-'));
-
     const utterance = new SpeechSynthesisUtterance(heading);
     utterance.lang = selectedVoice?.lang ? selectedVoice?.lang : 'en-US';
-    utterance.volume = 0.8;
+    utterance.volume = 1;
     utterance.rate = 0.8;
     synth.speak(utterance);
   };
