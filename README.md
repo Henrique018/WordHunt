@@ -9,7 +9,7 @@ Word Hunt is a simple dictionary app, you can search for a word, see its meaning
 
 ## Tech
 - [Free dictionary API](https://github.com/meetDeveloper/freeDictionaryAPI) - To get word definitions
- - #### [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) - Uses the Web Synthesis interface to recognize a word, set a voice and speak (may not work on older browsers)
+- [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) - Uses the Web Synthesis interface to recognize a word, set a voice and speak (may not work on older browsers)
 
 
 ## Getting Started
